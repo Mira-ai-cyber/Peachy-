@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # 環境変数からLINEの情報を読み込む
 LINE_CHANNEL_ACCESS_TOKEN = os.getenvyItw8y9K3030KvykrtTindPfLEYgvntig37xHb7rdzaZz55OL625OvTyOhhz29E0lLQgripP19Jdi2oW9SyyMbUGDFEFsUa9HySeBsxOZH+boOqcB+QqUCxN11P0zASmwrTQU8fO6fHIvXpuEnrtlAdB04t89/1O/w1cDnyilFU=
-LINE_CHANNEL_SECRET = os.getenv8534a0a4eb22d3bf58e12a212c8798b7
+LINE_CHANNEL_SECRET = os.getenv8534a0a4eb22d3bf58e12a212c8798b7 
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
 
