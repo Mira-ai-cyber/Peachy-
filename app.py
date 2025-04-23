@@ -27,14 +27,13 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     user_message = event.message.text.lower()
-
-    if 'おはよう' in user_message:
+    if 'おはよう' in user_message or 'おはよ' in user_message:
         reply = "Peachyから今日の応援メッセージ！\n小さな一歩でも本当にえらいよ🩷今日も一緒にがんばろっ🍑"
 
-    elif '夜' in user_message or 'おつかれ' in user_message:
+    elif '夜' in user_message or 'おつかれ' in user_message or 'こんばんわ' in user_message or 'こんばんわ' in user_message:
         reply = "今日も一日おつかれさま🫶\n寝る前に理想のプリケツ🍑や夢が叶った自分を想像してハッピー気分でおやすみしてね✨"
 
-    elif '食事' in user_message:
+    elif '食事' in user_message or 'ごはん' in user_message or 'メニュー' in user_message or 'ご飯' in user_message:        
         reply = "🍽️朝はたんぱく質モリモリ食べてね！卵、サラダチキン、ヨーグルトがおすすめ🩷先にサラダを食べると吸収されにくいよ！"
 
     else:
